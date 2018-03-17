@@ -1,0 +1,257 @@
+.box {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.08);
+    border-radius: 16px;
+    img {
+        width: 194px;
+        height: 176px;
+    }
+    p {
+        color: #292929;
+        margin: 20px 40px 0 40px;
+        padding-bottom: 40px;
+    }
+}
+.box-highlight {
+    background: #6879e4;
+    background: -moz-linear-gradient(left, #6879e4 0%, #7550a8 100%);
+    background: -webkit-linear-gradient(left, #6879e4 0%,#7550a8 100%);
+    background: linear-gradient(to right, #6879e4 0%,#7550a8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6879e4', endColorstr='#7550a8',GradientType=1);
+}
+.box-highlight p { 
+    color: rgba(255,255,255,.65);
+}
+.box-highlight h3, .box-highight p.price {
+    color: #fff !important;
+}
+.how-it-works {
+    .number {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        text-align: center;
+        margin: 40px 0 10px 40px;
+        font-size: 28px;
+        border-radius: 4px;
+        background: #6879e4; /* Old browsers */
+        background: -moz-linear-gradient(left, #D9DDF9 0%, #DCD3E9 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #D9DDF9 0%,#DCD3E9 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #D9DDF9 0%,#DCD3E9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D9DDF9', endColorstr='#DCD3E9',GradientType=1 ); /* IE6-9 */
+    }
+}
+#reviews-wall {
+    .gutter-sizer { width: 4%; }
+}
+
+.box-review {
+    z-index: 100;
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    overflow: visible;
+    margin-bottom: 50px;
+    p {
+        padding-bottom: 10px;
+    }
+    .person {
+        p {
+            font-size: 20px;
+            color: #B4B4B4;
+            line-height: 28px;
+            padding-bottom: 20px;
+        }
+    }
+    
+    .rating {
+        margin-right: 40px;
+        .stars {
+            float: right;
+            width: 106px;
+            height: 17px;
+            background-size: 106px 17px;
+            margin: 20px 0 11px 0;
+        }
+        .stars-0 { background-image: url(/assets/images/stars-0@2x.png); }
+        .stars-1 { background-image: url(/assets/images/stars-1@2x.png); }
+        .stars-2 { background-image: url(/assets/images/stars-2@2x.png); }
+        .stars-3 { background-image: url(/assets/images/stars-3@2x.png); }
+        .stars-4 { background-image: url(/assets/images/stars-4@2x.png); }
+        .stars-5 { background-image: url(/assets/images/stars-5@2x.png); }
+        
+        p {
+            text-align: right;
+            font-size: 20px;
+            color: #B4B4B4;
+            line-height: 28px;
+            padding-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+}
+
+#gift-subscription-boxes .box, #business-subscription-boxes .box {
+    
+    h3 {
+        padding-top: 25px;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        margin: 15px 15px 10px 15px;
+        padding-bottom: 0;
+    }
+    p {
+        font-size: 26px;
+        line-height: 34px;
+        margin: 0 40px 20px 40px;
+        padding: 0;
+        color: #B4B4B4;
+        text-align: center;
+    }
+    .button {
+        padding: 0 50px;
+        margin-bottom: 50px;
+    }
+    p.price {
+        color: #774D9B; 
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+}
+#business-subscription-boxes .box p {
+    padding: 0 40px;
+}
+
+.box-coffee-landing {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    h2 { 
+        margin: 30px 0 30px 30px; 
+    }
+    h3, p { 
+        font-size: 20px; 
+        line-height: 26px;
+        margin: 0 30px 5px 30px; 
+        padding: 0;
+    }
+    
+    h3 { 
+    }
+    p {
+        color: #B5B5B5;
+    }
+    p.footnote {
+        color: #B3B3B3;
+    }
+    .content { width: 320px; }
+    .image {
+        padding: 0;
+        width: 220px;
+        height: 220px;
+        margin: 30px 30px 0 0;
+        img {
+            width: 220px;
+            height: 220px;
+        }
+    }
+    .button {
+        margin: 20px 0 0 30px;
+    }
+}
+/* responsive */
+@media screen and (max-width: 1240px) { 
+    .box-review {
+        .rating {
+            .stars {
+                float: none;
+                display: block;
+                margin: 30px 0 0 40px;
+            }
+            p { 
+                margin: 8px 0 5px 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #reviews-wall {
+        column-count: 1;
+    }
+}
+@media screen and (max-width: 640px) { 
+    .box {
+        display: block;
+        margin-bottom: 30px;
+        padding: 10px;
+        p {
+            margin: 10px 20px 0 30px;
+            padding-bottom: 30px;
+            font-size: 24px !important;
+        }
+    }
+    .how-it-works {
+        padding: 0;
+        .number { 
+            position: relative;
+            margin: 30px 0 10px 30px;
+            clear: both;
+        }
+    
+    }
+    #reviews-wall {
+        column-count: 1;
+    }
+    .box-review {
+        padding: 15px 0 10px 0;
+        p { padding: 0; }
+        .person { padding-top: 10px; 
+            p {
+                font-size: 20px !important;
+            }
+        }
+        .rating { 
+            margin: 0;
+            p { 
+                margin: 8px 0 5px 30px; 
+                text-align: left;
+                float: none;
+                padding-bottom: 15px;
+                font-size: 20px !important;
+            }
+            .stars {
+                margin: 5px 0 0 0;
+                float: none;
+                margin-left: 30px;
+                display: block;
+            }
+            display: block; 
+        }
+    }
+    .box-coffee-landing {
+        .button {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .image {
+            margin: 0 auto;
+            width: 250px;
+            height: 250px;
+            padding-bottom: 25px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    #gift-subscription-boxes .box, #business-subscription-boxes .box {
+        padding: 0 0 20px 0;
+        .center { display: block; }
+        .button {padding: 0; margin: 0 auto 20px auto; }
+    }
+    #business-subscription-boxes .box p {
+        padding: 0;
+    }
+}

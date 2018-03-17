@@ -1,0 +1,139 @@
+header {
+    position: absolute;
+    z-index: 2000;
+    height: 80px;
+    line-height: 80px; 
+    #logo {
+        float: left;
+        width: 102px;
+        height: 35px;
+        margin-top: 22px;
+        background: url(/assets/images/QCC-logo@2x.png);
+        background-size: 102px 35px;
+    }
+    
+    #menu-button, #menu-button-close {
+        display: none;
+        position: absolute;
+        right: 25px;
+        width: 40px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        padding: 0 10px;
+        font-size: 12px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        margin-top: 22px;
+        color: #fff;
+    }
+}
+
+nav {    
+    float: right;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    width: auto;
+    font-weight: 500;
+    a {
+        color: #fff;
+        display: inline-block;
+        height: 22px;
+        line-height: 22px;
+        padding: 0 4px;
+        margin: 0 0 0 25px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    a:hover {
+        color: rgba(255,255,255,.85);
+    }
+    
+    span.new {
+        display: inline-block;
+        height: 22px;
+        background-color: #EF623B;
+        border-radius: 22px;
+        font-size: 10px;
+        float: right;
+        line-height: 22px;
+        padding: 0 8px;
+        margin-left: 4px;
+
+    }
+}
+    
+header.mobile {
+    #menu-button-close { 
+        display: inline-block;
+        z-index: 1000; 
+    }
+    nav {
+        padding: 75px 10px 0 10px;
+        background: rgba(0,0,0,.85);
+        float: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        a { 
+            font-size: 20px;
+            height: 60px;
+            line-height: 60px;
+            display: inline-block;
+            float: left;
+            clear: both;
+        }
+        span.new {
+            margin: 18px 0 0 8px;;
+        }
+    }
+}
+
+/* header animation when scrolling */
+header.reveal-header {
+    box-shadow: 0 0 30px rgba(0,0,0,.15);
+    padding: 0;
+    height: 80px;
+    position: fixed;
+    z-index: 10000;
+    background: white;
+    top: 0;
+    #logo {
+        background-image: url(/assets/images/QCC-logo-dark@2x.png);
+    }
+    nav {
+        a {
+            color: #292929;
+        }
+        span.new { 
+            color: #fff;
+        }
+    }
+}
+header.remove-header {
+  display: none;
+  top: -200px;
+  }
+
+
+@media screen and (max-width: 1240px) { 
+    header {
+        nav {
+          display: none;  
+        }
+        #menu-button {
+            display: inline-block;
+        }
+    }
+    header.mobile { 
+        nav { 
+            display: block; 
+        }
+    }
+}

@@ -1,0 +1,95 @@
+#cta, #cta-gift-subscriptions, #cta-business-subscriptions {
+    
+    padding: 50px 0;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6879e4+0,7550a8+100 */
+    background: #6879e4; /* Old browsers */
+    background: -moz-linear-gradient(left, #6879e4 0%, #7550a8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #6879e4 0%,#7550a8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #6879e4 0%,#7550a8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6879e4', endColorstr='#7550a8',GradientType=1 ); /* IE6-9 */
+    
+    h3 {
+        color: #fff;
+        font-size: 46px;
+        line-height: 59px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    p {
+        color: rgba(255,255,255,.35);
+    }
+    
+    #gift-subscription-dropdown {
+        margin: 0;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+        display: inline-block;
+        float: left; 
+        cursor: pointer;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50px;
+        letter-spacing: 1.6px;
+        font-size: 14px;
+        padding: 0 50px 0 30px;
+        border: 1px solid #fff;
+        background: transparent;
+        background-image: url(/assets/images/cta-dropdown-arrow@2x.png);
+        background-size: 11px 16px;
+        background-position: 88% 50%;
+        background-repeat: no-repeat;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-align: center;
+        color: #fff !important;
+        margin: 0 15px 15px 0;
+    }
+    #gift-subscription-dropdown:focus {
+        outline: none;
+    }
+    .button {
+        margin: 0 0 30px 0;
+        display: inline-block;
+        float: left;
+    }
+}
+
+#cta-business-subscriptions {
+    #gift-subscription-dropdown {
+        padding-right: 50px !important;
+        background-position: 90% 50%;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    #cta, #cta-gift-subscriptions {
+        padding: 40px 0;
+         
+        
+        h3 {
+            font-size: 30px;
+            line-height: 38px;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        .button { margin-bottom: 10px; }
+    }
+    #cta {
+        h3 {
+            margin-top: 30px; 
+        }
+        p { margin-bottom: 30px; }
+        .button { 
+            margin: 0; 
+        }
+    }
+    #cta-gift-subscriptions {
+        .button {
+            margin-bottom: 40px;
+        }
+    }
+}

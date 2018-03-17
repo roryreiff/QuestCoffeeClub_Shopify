@@ -1,0 +1,42 @@
+{% schema %}
+{
+    "name": "Hero",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "Image",
+            "label": "Background image"
+        },
+        {
+            "type": "radio",
+            "id": "icon_cart",
+            "options": [
+                { "value": "Large", "label": "Large (Home)"},
+                { "value": "Medium", "label": "Medium"},
+                { "value": "Small", "label": "Small"}
+            ],
+            "label": "Hero Height"
+        }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<div class="outer hero">
+    <div class="hero-center">
+    <div class="inner">
+        <h1>Single origin, small-batch roasted Colombian coffee delivered to your door each month</h1>
+        <div class="center">
+            <a href="/" class="button button-main button-large button-center">Join Now</a>
+            <a href="/gift-subscriptions" class="button button-main-white button-with-arrow button-large button-center">Shop Gift Subscriptions<span class="button-arrow"></span></a>
+        </div>
+    </div>
+    </div>
+    <div class="hero-cover"></div>
+    <div class="hero-background"></div>
+</div>
