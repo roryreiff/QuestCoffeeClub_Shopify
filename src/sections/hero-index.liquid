@@ -6,16 +6,6 @@
             "type": "image_picker",
             "id": "Image",
             "label": "Background image"
-        },
-        {
-            "type": "radio",
-            "id": "icon_cart",
-            "options": [
-                { "value": "Large", "label": "Large (Home)"},
-                { "value": "Medium", "label": "Medium"},
-                { "value": "Small", "label": "Small"}
-            ],
-            "label": "Hero Height"
         }
     ]
 }
@@ -38,5 +28,5 @@
     </div>
     </div>
     <div class="hero-cover"></div>
-    <div class="hero-background"></div>
+    <div class="hero-background" style="background-image: url({{ section.settings.Image | img_url: '1479x1479'}})"></div>
 </div>

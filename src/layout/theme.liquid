@@ -65,11 +65,8 @@
 <body id="{{ page_title | handle }}" class="template-{{ template.name | handle }}">
 
   {% include 'header' %}
-  {% section 'hero' %}
-
-  <main role="main" id="MainContent">
-    {{ content_for_layout }}
-  </main>
+  
+  {{ content_for_layout }}
 
   {% section 'footer' %}
 
