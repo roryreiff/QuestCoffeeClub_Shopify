@@ -22,7 +22,7 @@ development:
 
 production:
   password: 369c88e113ace6a4ea1d8687d66b3f4e
-  theme_id: "live"
+  theme_id: 8924594219
   store: quest-coffee-club.myshopify.com
   ignore_files:
     #- settings_data.json # Uncomment this line to avoid resetting theme settings
